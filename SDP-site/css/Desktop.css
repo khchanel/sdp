@@ -1,0 +1,315 @@
+
+/*
+ * CSS for UTS Maintanence desktop web interface
+ * Copyright (c) Ruben Schade and SDP Spring 2012 Group 13
+ */
+
+
+/* MASTER RESET & TOP LEVEL ELEMENTS ******************************************/
+
+html, body, h1, h2, h5, form, fieldset, input, #navigation, #navigation li, #request-list ul, #request-list li
+{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	vertical-align:baseline;
+}
+
+html { background:#003366; }
+
+body
+{
+	border-radius:10px;
+	color:#333333;
+	font-family:"Droid Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:13px;
+	margin:20px;
+	min-width:905px; // To accomodate smaller tablets & lower resolution desktops
+}
+
+p { margin-top:0; }
+
+a
+{
+	color:#007dd8;
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+a:hover { text-decoration:underline; }
+
+ul { list-style-type:circle; }
+
+/* HEADING ********************************************************************/
+
+h1.title
+{
+	background:#007dd8;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#009bda), to(#007dd8));
+	background-image:-webkit-linear-gradient(#009bda, #007dd8);
+	background-image:-moz-linear-gradient(#009bda, #007dd8);
+	background-image:-ms-linear-gradient(#009bda, #007dd8);
+	background-image:-o-linear-gradient(#009bda, #007dd8);
+	background-image:linear-gradient(#009bda, #007dd8);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#009bda', endColorstr='#007dd8');
+	border-radius:10px 10px 0 0;
+	color:#ffffff;
+	padding:20px 20px;
+}
+
+h1 { font-size:20px; }
+
+#date
+{
+	color:#ffffff;
+	padding:0 10px 10px 0;
+	text-align:right;
+}
+
+/* MAIN DIV *******************************************************************/
+
+#main
+{
+	background:#c4ddf9;
+	border-radius:0 0 10px 10px;
+	padding:20px 20px 10px 20px;
+	min-height:220px;
+}
+
+
+/* HOME PAGE ******************************************************************/
+
+#home img
+{
+    float:right;
+}
+
+/* SIDEBAR FORM ***************************************************************/
+
+#sidebar
+{
+	border-radius:10px;
+	float:left;
+	width:200px;
+}
+
+input, textarea, select
+{
+	border:1px solid #aaaaaa;
+	border-radius:10px;
+	padding:5px;
+	width:190px;
+	background-image:linear-gradient( #ffffff, #eeeeee);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff));
+	background-image:-webkit-linear-gradient(#eeeeee, #ffffff);
+	background-image:-moz-linear-gradient(#eeeeee, #ffffff);
+	background-image:-ms-linear-gradient(#eeeeee, #ffffff);
+	background-image:-o-linear-gradient(#eeeeee, #ffffff);
+	background-image:linear-gradient(#eeeeee, #ffffff);
+}
+
+select { width:200px; }
+
+input[type='submit'], #navigation li a, .linkbutton
+{
+	background-image:-webkit-gradient(linear, left top, left bottom, from( #209dd5), to( #167cc5));
+	background-image:-webkit-linear-gradient( #209dd5, #167cc5);
+	background-image:-moz-linear-gradient( #209dd5, #167cc5);
+	background-image:-ms-linear-gradient( #209dd5, #167cc5);
+	background-image:-o-linear-gradient( #209dd5, #167cc5);
+	background-image:linear-gradient( #209dd5, #167cc5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#209dd5', endColorstr='#167cc5');
+	border:1px solid #167cc5;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+#sidebar input[type='submit']
+{
+	padding:5px;
+	width:202px;
+}
+
+input[type='submit'] {
+	cursor:pointer;	
+}
+
+#navigation { padding:20px 0 20px 0; }
+
+#navigation li a
+{
+	border-radius:10px;
+	display:block;
+	padding:5px;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+input[type='submit']:hover, #navigation li a:hover, .linkbutton:hover
+{
+	background-image:linear-gradient( #dddddd, #eeeeee);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+	background-image:-webkit-linear-gradient(#eeeeee, #dddddd);
+	background-image:-moz-linear-gradient(#eeeeee, #dddddd);
+	background-image:-ms-linear-gradient(#eeeeee, #dddddd);
+	background-image:-o-linear-gradient(#eeeeee, #dddddd);
+	background-image:linear-gradient(#eeeeee, #dddddd);
+	color:#333333;
+	text-decoration:none;
+	border:1px solid #aaaaaa;
+}
+
+.linkbutton
+{
+	padding:5px 15px;
+	border-radius:10px;
+	cursor:pointer;
+}
+
+fieldset
+{
+	border:0;
+	margin:0 0 10px 0;
+}
+
+label
+{
+	display:block;
+	float:left;
+	width:160px;
+}
+
+fieldset.inline { display:inline; }
+
+fieldset.inline label
+{
+	width:100px;
+	padding-right:10px;
+}
+
+#sidebar #login-status { font-weight:bold; }
+
+#advancedSearch { margin-top:10px; }
+
+#remember
+{
+	width:30px;
+	float:left;
+}
+
+#searchClosed { width:auto; }
+
+/* BUTTON SET *****************************************************************/
+
+.firstbutton { 
+  border-radius:10px 0 0 10px;
+  margin-left:10px;
+  padding-right:10px;
+}
+
+.middlebutton, .middlebutton:hover
+{
+	border-radius:0;
+	border-width:1px 0px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.lastbutton
+{ 
+  border-radius:0 10px 10px 0; 
+  margin-right:10px;
+  padding-left:10px;
+}
+
+/* STATUSES *******************************************************************/
+
+.request, #request-list li
+{
+	background:#ffffff;
+	border-radius:10px;
+	line-height:22px;
+	margin:0 0 10px 220px;
+}
+#request-list li:hover {
+	background-image:linear-gradient( #dddddd, #eeeeee);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+	background-image:-webkit-linear-gradient(#eeeeee, #dddddd);
+	background-image:-moz-linear-gradient(#eeeeee, #dddddd);
+	background-image:-ms-linear-gradient(#eeeeee, #dddddd);
+	background-image:-o-linear-gradient(#eeeeee, #dddddd);
+	background-image:linear-gradient(#eeeeee, #dddddd);
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFEEEEEE,EndColorStr=#FFDDDDDD);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFEEEEEE,EndColorStr=#FFDDDDDD)"
+}
+#request-list a, .request {
+	padding:15px 10px 1px 10px;
+}
+
+#request-list a { 
+    color:#333333;
+    display:block;
+    text-decoration:none;
+    width:100%;
+}
+
+.user-list a {
+	padding:10px 20px !important;
+}
+
+.user-list li {
+	border: 1px solid #CCC;	
+}
+
+.red { border-left:10px solid #ff0000; }
+
+.green { border-left:10px solid #00cc00; }
+
+.yellow { border-left:10px solid #FF0; }
+
+/* FOOTER *********************************************************************/
+
+#footer
+{
+	clear:both;
+	color:#ffffff;
+	text-align:center;
+	padding:10px;
+}
+
+/* Lists */
+dl {
+	line-height:30px;	
+}
+
+dt
+{
+	float: left;
+	font-weight:bold;
+	width:150px;
+}
+ img.report {
+	width:500px; 
+ }
+ 
+ .delete {
+	float: right;
+	text-align: right;
+	position: relative;
+	top: 25px;	
+	right:25px;
+	background:#000;
+	width:auto !important;
+	padding:10px !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #209DD5), to( #167CC5));
+	background-image: -webkit-linear-gradient( #209DD5, #167CC5);
+	background-image: -moz-linear-gradient( #209DD5, #167CC5);
+	background-image: -ms-linear-gradient( #209DD5, #167CC5);
+	background-image: -o-linear-gradient( #209DD5, #167CC5);
+	background-image: linear-gradient( #209DD5, #167CC5);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#209dd5', endColorstr='#167cc5');
+	border-radius:10px;
+	border: 1px solid #167CC5;
+	color: white !important;
+	font-weight: bold;
+}

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/" />
+<title>TestRequestOrdering</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestRequestOrdering</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/SDP-site/index.php/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=identity</td>
+	<td>admin@admin.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.ui-btn-hidden</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=textfield</td>
+	<td>title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Description</td>
+	<td>description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=CategoryId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CategoryId</td>
+	<td>label=Light bulb</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=textfield</td>
+	<td>another</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Description</td>
+	<td>blah blah</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=CategoryId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CategoryId</td>
+	<td>label=Mattress</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=textfield</td>
+	<td>a third</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Description</td>
+	<td>blah blah</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=CategoryId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CategoryId</td>
+	<td>label=Air conditioning</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=p.ui-li-desc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Requires more user information</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;StatusID&quot;] &gt; option[value=&quot;2&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/div/div/a/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Awaiting confirmation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;StatusID&quot;] &gt; option[value=&quot;4&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/div/div/a/p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Requires more user information</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=p.ui-li-desc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Closed</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=p.ui-li-desc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=StatusID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Closed</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.ui-link-inherit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#edit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=StatusID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=StatusID</td>
+	<td>label=Closed</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#submit &gt; span.ui-btn-inner.ui-btn-corner-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/a/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logOutButton</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
